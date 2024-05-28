@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Price Grid Component</title>
+    <meta name="description" content="Frontend Mentor Project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              body: ["Karla", "sans-serif"],
+            },
+            colors: {
+              cyan: "hsl(179, 62%, 43%)",
+              brightYellow: "hsl(71, 73%, 54%)",
+              lightGray: "hsl(204, 43%, 93%)",
+              grayishBlue: "hsl(218, 22%, 67%)",
+            },
+            backgroundImage: {
+              "desktop-background": "url(images/bg-desktop.svg)",
+            },
+            boxShadow: {
+              /* offset-x | offset-y | blur-radius | color */
+              button: "0 10px 10px rgba(0, 0, 0, 9.73%)",
+              card: "0 15px 30px rgba(0, 81, 171, 14.88%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex justify-center items-center min-h-screen w-screen font-body text-white bg-lightGray box-border"
+  >
+    <main
+      class="rounded-lg bg-white md:max-w-[635px] my-[72px] mx-8 overflow-hidden shadow-card"
+    >
+      <div class="p-10">
+        <h1 class="text-cyan font-bold text-2xl mb-6">Join our community</h1>
+        <p class="text-brightYellow text-lg mb-3">
+          <strong>30-day, hassle-free money back guarantee</strong>
+        </p>
+        <p class="text-body text-grayishBlue">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row bg-cyan">
+        <div class="flex-1 p-10">
+          <h2 class="text-lg font-bold mb-5">Monthly Subscription</h2>
+          <div class="flex gap-2.5 mb-0.5 items-center">
+            <p class="text-3xl"><strong>$29</strong></p>
+            <p class="text-body opacity-50">per month</p>
+          </div>
+          <p class="text-body mb-8">Full access for less than $1 a day</p>
+          <a
+            href="/"
+            class="block text-center rounded py-3.5 px-12 bg-brightYellow w-full shadow-button"
+          >
+            Sign Up
+          </a>
+        </div>
+        <div class="flex-1 bg-white/[.15] p-10">
+          <h2 class="text-lg font-bold mb-4">Why Us</h2>
+          <ul class="text-sm opacity-75">
+            <li>Tutorials by industry experts</li>
+            <li>Peer & expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
